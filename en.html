@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Studio HIYUSE | Game × Experience × AI</title>
+  <meta name="description" content="Studio HIYUSE is a game development studio exploring the fusion of immersive game experiences and AI technology.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ========== UI FRAME ========== -->
+
+<button class="nav-trigger" id="navTrigger">
+  <span class="nav-trigger__icon">+</span>
+  <span class="nav-trigger__label">MENU</span>
+</button>
+
+<!-- JP / EN -->
+<div class="lang-switch side-controls__lang">
+  <button onclick="location.href='index.html'">JP</button>
+  <button class="is-active" onclick="location.href='en.html'">EN</button>
+</div>
+
+<div class="scroll-indicator">
+  <span class="scroll-indicator__text">SCROLL</span>
+  <span class="scroll-indicator__arrow">▼</span>
+</div>
+
+<button class="to-top" id="toTop">
+  <span>TOP</span>
+  <span class="to-top__arrow">▲</span>
+</button>
+
+<div class="copyright-rail">
+  © 2025 Studio HIYUSE
+</div>
+
+
+<!-- ========== OVERLAY MENU ========== -->
+
+<nav class="overlay-nav" id="overlayNav" aria-hidden="true">
+  <div class="overlay-nav__inner">
+
+    <div class="overlay-nav__logo">
+      <img src="menu_logo.svg" alt="Studio HIYUSE">
+    </div>
+
+    <ul class="overlay-nav__list">
+      <li><a href="#hero">TOP</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#message">MESSAGE</a></li>
+      <li><a href="#business">BUSINESS</a></li>
+      <li><a href="#works">WORKS</a></li>
+      <li><a href="#team">TEAM</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+  </div>
+
+  <button class="overlay-nav__close" id="overlayClose">
+    <span>×</span>
+    <span class="overlay-nav__close-label">CLOSE</span>
+  </button>
+</nav>
+
+
+<!-- ========== MAIN ========== -->
+
+<main id="main">
+
+  <section id="hero" class="hero">
+
+  <div class="hero-bg">
+
+    </div>
+     <!-- ▼ hero-bg5（静止画） -->
+    <div class="hero-bg__slide" style="background-image:url('hero-bg3.jpg')"></div>
+    <div class="hero-bg__slide" style="background-image:url('hero-bg4.jpg')"></div>
+   
+
+    <!-- ▼ -->
+    <div class="hero-bg__slide" style="background-image:url('hero-bg5.jpg')"></div>
+
+        <!-- ▼ hero-bg1 を動画に変更 -->
+    <div class="hero-bg__slide hero-bg__slide--video">
+      <video class="hero-bg__video" autoplay muted loop playsinline poster="hero-bg1.jpg">
+        <source src="hero-bg1.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero-bg__slide" style="background-image:url('hero-bg8.jpg')"></div>
+    <div class="hero-bg__slide" style="background-image:url('hero-bg7.jpg')"></div>
+    <div class="hero-bg__slide" style="background-image:url('hero-bg9.jpg')"></div>
+
+    <div class="hero-bg__slide" style="background-image:url('hero-bg2.jpg')"></div>
+  </div>
+
+
+    <div class="hero-overlay">
+      <div class="hero-layout">
+
+        <div class="hero-logo">
+          <img src="logo.svg" alt="Studio HIYUSE">
+        </div>
+
+        <div class="hero-copy">
+          <p class="hero-kicker">GAME × EXPERIENCE × AI</p>
+          <h1>
+            A new, truly personal<br>
+            immersive experience.
+          </h1>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2>ABOUT</h2>
+
+    <p class="lead">
+      We create games that celebrate the joy of immersion and move players emotionally, <br>
+      constantly exploring how far we can go by weaving AI technology into the experience.
+    </p>
+
+    <div class="card">
+      <div class="grid-2">
+
+        <div class="about-image">
+          <img src="about-image.jpg" alt="Company Vision">
+        </div>
+
+        <div>
+          <p><strong>Company Name</strong>: Studio HIYUSE / スタジオ灯唯世</p>
+          <p><strong>Location</strong>: Chiyoda-ku, Tokyo (Akihabara area)</p>
+          <p><strong>Founded</strong>: 2025</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- MESSAGE -->
+  <section id="message" class="section">
+    <h2>MESSAGE</h2>
+
+    <div class="card">
+      <p>
+        Thank you for visiting Studio HIYUSE. We are a team of professionals who are deeply passionate
+        about game experiences.<br>
+        No matter how far technology evolves, what truly moves people’s hearts and changes the world
+        is the intention and creativity of the humans who make the work.<br>
+        The name “灯唯世 (HIYUSE)” carries our wish: to light a spark in someone’s world through
+        game experiences that truly resonate with them.<br>
+        We will continue to deliver titles that ignite players’ hearts through the blend of
+        GAME × EXPERIENCE × AI technology.
+      </p>
+      <p>Studio Head&nbsp; Yuki Watanabe</p>
+    </div>
+  </section>
+
+
+  <!-- BUSINESS -->
+  <section id="business" class="section">
+    <h2>OUR BUSINESS</h2>
+    <p class="lead">
+      Game Development ｜ Video Production ｜ Music Production ｜ AI System Research
+    </p>
+  </section>
+
+
+  <!-- WORKS -->
+  <section id="works" class="section">
+    <h2>WORKS</h2>
+
+    <div class="works-grid">
+      <article class="work-item">
+        <img src="work_01.jpg" alt="AAA title project in development">
+        <h3>AAA Title Project in Development</h3>
+        <p>Planned for release in 2026</p>
+      </article>
+
+      <article class="work-item">
+        <img src="work_02.jpg" alt="Integrating generative AI with local LLMs">
+        <h3>Integrating Generative AI with Local LLMs</h3>
+        <p>
+          We are developing proprietary technologies such as in-game direction control systems powered by AI.
+        </p>
+      </article>
+
+      <article class="work-item">
+        <img src="work_03.jpg" alt="New game IP (Seed round)">
+        <h3>New Game IP (Seed Round)</h3>
+        <p>
+          Currently in development with a focus on AI-Narrative Action RPG (Open Zone) design and AI-driven features.
+        </p>
+      </article>
+    </div>
+  </section>
+
+
+  <!-- TEAM -->
+  <section id="team" class="section">
+    <h2>TEAM</h2>
+
+    <div class="team-grid">
+
+      <div class="team-member">
+        <img src="member1.png" alt="Y. Watanabe">
+        <h3>Y. Watanabe</h3>
+        <p>
+          Studio Head<br>
+          Former Division Head at SQUARE ENIX
+        </p>
+      </div>
+
+      <div class="team-member">
+        <img src="member2.png" alt="H. Iwano">
+        <h3>H. Iwano</h3>
+        <p>
+          Chief Creative Officer<br>
+          Former Producer at SQUARE ENIX and Akatsuki Games
+        </p>
+      </div>
+
+      <div class="team-member">
+        <img src="member3.png" alt="K. Morishita">
+        <h3>K. Morishita</h3>
+        <p>
+          Technical Officer<br>
+          Game development｜Web application development｜Lead for global online open-world game development
+        </p>
+      </div>
+
+      <div class="team-member">
+        <img src="member9.png" alt="S. Yamamoto">
+        <h3>S. Yamamoto</h3>
+        <p>
+          Lead Engineer<br>
+          AI development｜Original LLM R&amp;D｜NFT marketplace development｜Web application security assessment
+        </p>
+      </div>
+
+      <div class="team-member">
+        <img src="member5.png" alt="K. Seki">
+        <h3>K. Seki</h3>
+        <p>
+          Art Director<br>
+          Former Art Director at Akatsuki
+        </p>
+      </div>
+
+      <div class="team-member">
+        <img src="member6.png" alt="Y. Miyamoto">
+        <h3>Y. Miyamoto</h3>
+        <p>Legal &amp; Finance Manager</p>
+      </div>
+
+      <div class="team-member">
+        <img src="member7.png" alt="C. Chen">
+        <h3>C. Chen</h3>
+        <p>China Business Manager</p>
+      </div>
+
+      <div class="team-member">
+        <img src="member8.png" alt="N. Houryu">
+        <h3>N. Houryu</h3>
+        <p>Business Development Manager</p>
+      </div>
+
+      <div class="team-member">
+        <img src="member4.png" alt="K. Fujii">
+        <h3>K. Fujii</h3>
+        <p>
+          Advisor<br>
+          Former Executive Officer at PwC and SQUARE ENIX
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section--contact">
+    <div class="contact-inner">
+      <h2>CONTACT</h2>
+
+      <p class="contact-lead">
+        For project inquiries or collaboration opportunities, feel free to get in touch.
+      </p>
+
+      <div class="contact-card">
+        <div class="contact-line">
+          <span class="contact-line__label">MAIL</span>
+          <span class="contact-line__mail">contact★hiyuse.jp</span>
+          <span class="contact-line__note">Please replace ★ with @ before sending.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script src="main.js"></script>
+</body>
+</html>

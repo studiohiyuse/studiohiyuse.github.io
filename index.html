@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Studio HIYUSE | スタジオ灯唯世</title>
+  <meta name="description" content="Studio HIYUSE（スタジオ灯唯世）は、ゲーム体験とAI技術の融合をテーマに活動するゲーム開発スタジオです。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button class="nav-trigger" id="navTrigger">
+  <span class="nav-trigger__icon">+</span>
+  <span class="nav-trigger__label">MENU</span>
+</button>
+
+<div class="lang-switch side-controls__lang">
+  <button class="is-active" onclick="location.href='index.html'">JP</button>
+  <button onclick="location.href='en.html'">EN</button>
+</div>
+
+<div class="scroll-indicator">
+  <span class="scroll-indicator__text">SCROLL</span>
+  <span class="scroll-indicator__arrow">▼</span>
+</div>
+
+<button class="to-top" id="toTop">
+  <span>TOP</span>
+  <span class="to-top__arrow">▲</span>
+</button>
+
+<div class="copyright-rail">
+  © 2025 Studio HIYUSE
+</div>
+
+
+<nav class="overlay-nav" id="overlayNav" aria-hidden="true">
+  <div class="overlay-nav__inner">
+
+    <div class="overlay-nav__logo">
+      <img src="menu_logo.svg" alt="Studio HIYUSE">
+    </div>
+
+    <ul class="overlay-nav__list">
+      <li><a href="#hero">TOP</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#message">MESSAGE</a></li>
+      <li><a href="#business">BUSINESS</a></li>
+      <li><a href="#works">WORKS</a></li>
+      <li><a href="#team">TEAM</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+  </div>
+
+  <button class="overlay-nav__close" id="overlayClose">
+    <span>×</span>
+    <span class="overlay-nav__close-label">CLOSE</span>
+  </button>
+</nav>
+
+
+<main id="main">
+
+  <section id="hero" class="hero">
+
+  <div class="hero-bg">
+
+    </div>
+     <!-- ▼ hero-bg5（静止画） -->
+    <div class="hero-bg__slide" style="background-image:url('hero-bg3.jpg')"></div>
+    <div class="hero-bg__slide" style="background-image:url('hero-bg4.jpg')"></div>
+   
+
+    <!-- ▼ -->
+    <div class="hero-bg__slide" style="background-image:url('hero-bg5.jpg')"></div>
+
+        <!-- ▼ hero-bg1 を動画に変更 -->
+    <div class="hero-bg__slide hero-bg__slide--video">
+      <video class="hero-bg__video" autoplay muted loop playsinline poster="hero-bg1.jpg">
+        <source src="hero-bg1.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero-bg__slide" style="background-image:url('hero-bg8.jpg')"></div>
+    <div class="hero-bg__slide" style="background-image:url('hero-bg7.jpg')"></div>
+    <div class="hero-bg__slide" style="background-image:url('hero-bg9.jpg')"></div>
+
+    <div class="hero-bg__slide" style="background-image:url('hero-bg2.jpg')"></div>
+  </div>
+
+  <div class="hero-overlay">
+    <div class="hero-layout">
+
+      <div class="hero-logo">
+        <img src="logo.svg" alt="Studio HIYUSE">
+      </div>
+
+      <div class="hero-copy">
+        <p class="hero-kicker">GAME × EXPERIENCE × AI</p>
+        <h1>
+          新しい、あなただけの<br>
+          没入体験を。
+        </h1>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <section id="about" class="section">
+    <h2>ABOUT</h2>
+
+    <p class="lead">
+      「没入できる喜び」と「感情を震わせる」ゲームを、AI技術を織り込むことでどこまで設計できるか。<br>
+      その問いを軸に、私たちは作品づくりを続けています。
+    </p>
+
+    <div class="card">
+      <div class="grid-2">
+        
+        <div class="about-image">
+          <img src="about-image.jpg" alt="Company Vision">
+        </div>
+        
+        <div>
+          <p><strong>Company Name</strong>：スタジオ灯唯世 / Studio HIYUSE</p>
+          <p><strong>Location</strong>：東京都千代田区（秋葉原エリア）</p>
+          <p><strong>Founded</strong>：2025年</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="message" class="section">
+    <h2>MESSAGE</h2>
+
+    <div class="card">
+      <p>
+        スタジオ灯唯世にアクセスいただきありがとうございます。私たちは、ゲーム体験に情熱を持つプロフェッショナルの集団です。<br>
+        どんなに技術が進化しても、感情を揺らし、世界を動かすのは、創る人間の意志そのものです。<br>
+        灯唯世という名前には、「世界の誰かの為に響くゲーム体験で、灯をともせるように」という願いを込めました。<br>
+        これからも、GAME × EXPERIENCE × AI技術でプレイヤーの心に火をつける作品をお届けしていきます。
+      </p>
+      <p>Studio Head　Yuki Watanabe</p>
+    </div>
+  </section>
+
+
+  <section id="business" class="section">
+    <h2>OUR BUSINESS</h2>
+    <p class="lead">
+      ゲーム開発｜映像制作｜音楽制作｜AIシステム研究
+    </p>
+  </section>
+
+
+  <section id="works" class="section">
+    <h2>WORKS</h2>
+
+    <div class="works-grid">
+      <article class="work-item">
+        <img src="work_01.jpg" alt="AAAタイトルプロジェクト開発中">
+        <h3>AAAタイトルプロジェクト開発中</h3>
+        <p>2026年公開予定</p>
+      </article>
+
+      <article class="work-item">
+        <img src="work_02.jpg" alt="ローカルLLMを活用した生成AI技術の融合">
+        <h3>ローカルLLMを活用した生成AI技術の融合</h3>
+        <p>AIを活用したゲーム内演出制御システムなど、独自技術の研究開発も進行しています。</p>
+      </article>
+
+      <article class="work-item">
+        <img src="work_03.jpg" alt="新規ゲーム企画（SEEDラウンド）">
+        <h3>新規ゲーム企画（SEEDラウンド）</h3>
+        <p>AI-Narrative Action RPG (Open Zone)｜AI分野から中心に開発中です。</p>
+      </article>
+    </div>
+  </section>
+
+
+  <section id="team" class="section">
+    <h2>TEAM</h2>
+
+    <div class="team-grid">
+
+      <div class="team-member">
+        <img src="member1.png" alt="Y. Watanabe">
+        <h3>Y. Watanabe</h3>
+        <p>
+          Studio Head<br>
+          元スクウェア・エニックス事業部長
+        </p>
+      </div>
+
+      <div class="team-member">
+        <img src="member2.png" alt="H. Iwano">
+        <h3>H. Iwano</h3>
+        <p>
+          Chief Creative Officer<br>
+          元スクウェア・エニックス、アカツキゲームスのプロデューサー
+        </p>
+      </div>
+
+      <div class="team-member">
+        <img src="member3.png" alt="K. Morishita">
+        <h3>K. Morishita</h3>
+        <p>
+          Technical Officer<br>
+          ゲーム開発｜Web アプリケーション開発｜全世界向けオンライン・オープンワールドゲーム開発責任者
+        </p>
+      </div>
+
+      <div class="team-member">
+        <img src="member9.png" alt="S. Yamamoto">
+        <h3>S. Yamamoto</h3>
+        <p>
+          Lead Engineer<br>
+          AI開発｜独自LLM研究開発｜NFTマーケットプレイス開発｜Webアプリケーション脆弱性診断
+        </p>
+      </div>
+
+      <div class="team-member">
+        <img src="member5.png" alt="K. Seki">
+        <h3>K. Seki</h3>
+        <p>
+          Art Director<br>
+          元アカツキのアートディレクター
+        </p>
+      </div>
+
+      <div class="team-member">
+        <img src="member6.png" alt="Y. Miyamoto">
+        <h3>Y. Miyamoto</h3>
+        <p>Legal &amp; Finance Manager</p>
+      </div>
+
+      <div class="team-member">
+        <img src="member7.png" alt="C. Chen">
+        <h3>C. Chen</h3>
+        <p>China Business Manager</p>
+      </div>
+
+      <div class="team-member">
+        <img src="member8.png" alt="N. Houryu">
+        <h3>N. Houryu</h3>
+        <p>Business Development Manager</p>
+      </div>
+
+      <div class="team-member">
+        <img src="member4.png" alt="K. Fujii">
+        <h3>K. Fujii
+        </h3>
+        <p>
+          Advisor<br>
+          元PwC、スクウェア・エニックスの執行役員
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="contact" class="section section--contact">
+  <div class="contact-inner">
+    <h2>CONTACT</h2>
+
+    <p class="contact-lead">
+      お仕事のご依頼やご相談など、お気軽にお問い合わせください。
+    </p>
+
+    <div class="contact-card">
+      <div class="contact-line">
+        <span class="contact-line__label">MAIL</span>
+        <span class="contact-line__mail">contact★hiyuse.jp</span>
+        <span class="contact-line__note">★を @ に変えてお送りください</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</main>
+
+<script src="main.js"></script>
+</body>
+</html>
